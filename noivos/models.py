@@ -24,7 +24,7 @@ class Convidados(models.Model):
 
     @property
     def link_convite(self):
-        return f'http://127.0.0.1:8000/convidados/?token={self.token}'
+        return f'http://simwebsite.ddns.net:8000/convidados/?token={self.token}'
 
     def __str__(self):
         return self.nome_convidado
